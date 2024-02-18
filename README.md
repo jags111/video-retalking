@@ -47,6 +47,23 @@
 https://user-images.githubusercontent.com/4397546/224310754-665eb2dd-aadc-47dc-b1f9-2029a937b20a.mp4
 
 
+## CMake
+First install [CMake](https://cmake.org/download/), then proceed with the install below:
+
+## Windows Install
+```
+git clone https://github.com/natlamir/video-retalking.git
+cd video-retalking
+conda create -n video-retalking python=3.8
+conda activate video-retalking
+
+conda install ffmpeg
+# Please follow the instructions from https://pytorch.org/get-started/previous-versions/
+# This installation command only works on CUDA 11.1
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+pip install -r requirements.txt
+```
 
 
 ## Environment
